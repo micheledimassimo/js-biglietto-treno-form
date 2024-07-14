@@ -12,44 +12,140 @@
     </head>
     <body>
         <header>
-
+            <div class=" d-flex justify-content-between align-items-center">
+                <div>
+                    <img src="img/Italo_Logo_ML_NEG.png" alt="Italo">
+                </div>
+                <div >
+                    <nav>
+                        <ul class="d-flex ">
+                            <li class="px-2">
+                                <a href="#" class="text-uppercase text-light">
+                                    Offerte
+                                </a>
+                            </li>
+                            <li class="px-2">
+                                <a href="#" class="text-uppercase text-light">
+                                    Destinazioni e orari
+                                </a>
+                            </li>
+                            <li class="px-2"> 
+                                <a href="#" class="text-uppercase text-light">
+                                    Viaggiare con italo
+                                </a>
+                            </li>
+                            <li class="px-2">
+                                <a href="#" class="text-uppercase text-light">
+                                    Buisness first
+                                </a>
+                            </li>
+                            <li class="px-2">
+                                <a href="#" class="text-uppercase text-light">
+                                    Programma italo più
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
         <main>
-            <form>
-                <div>
-                    <label for="trip">
-                        Destinazione
-                    </label>
-                    <input
-                        type="text"
-                        id="trip"
-                        name="trip"
-                        placeholder="Quanti km devi percorrere?"
-                        minlength="1"
-                        maxlength="10"
-                        required>
+            <div class="container-fluid pt-4">
+                <form class="row align-items-end">
+                    <div class="col">
+                        <label for="trip" class="form-label">
+                            Destinazione:
+                        </label>
+                        <input
+                            class="form-control" 
+                            type="text"
+                            id="trip"
+                            name="trip"
+                            placeholder="Quanti km devi fare?"
+                            minlength="1"
+                            maxlength="10"
+                            required>
+                    </div>
+    
+                    <div class="col">
+                        <label for="age" class="form-label">
+                            Età:
+                        </label>
+                        <input
+                            class="form-control"                        
+                            type="number"
+                            id="age"
+                            name="age"
+                            placeholder="Inserisci la tua età..."
+                            min="0"
+                            max="150"
+                            required>
+                    </div>
+                    <div class="col-2">
+                        <label class="form-label" for="date">Partenza:</label>
+                        <input class="form-control" type="date" id="date" name="birthday" required>
+                    </div>
+                    <div class="col-2 ">
+                        <button id="submit-button" type="submit" class="btn btn-primary">
+                            Calcola
+                        </button>
+                    </div>
+                </form>
+                <div class="my-container pt-4">
+                    <h2 class="text-center">
+                        Offerte
+                    </h2>
+                    <div class="row pt-4">
+                        <div class="col-3 pt-2">
+                            <div class="card">
+                                <img src="img/6fd91efbfcae469ea40f8152e2240240.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Italo 2x1 </h5>
+                                  <p class="pb-4">50% di sconto</p>
+                                  
+                                  <a href="#" class="btn my-btn text-light text-uppercase">Scopri di più</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-3 pt-2">
+                            <div class="card">
+                                <img src="img/creativit_motore_ricerca_1200x800_1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Italo Giovani </h5>
+                                  <p class="pb-4">Prezzi a partire da 7,90&euro;</p>
+                                  
+                                  <a href="#" class="btn my-btn text-light text-uppercase">Scopri di più</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-3 pt-2">
+                            <div class="card">
+                                <img src="img/f3a4bed30b0a43729dde74691398f661.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Italo Senior </h5>
+                                  <p class="pb-4">Prezzi a partire da 8,90&euro;</p>
+                                  
+                                  <a href="#" class="btn my-btn text-light text-uppercase">Scopri di più</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-3 pt-2">
+                            <div class="card">
+                                <img src="img/images (1).jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Scegli Italo</h5>
+                                  <p>Impresa per i tuoi viaggi di lavoro</p>
+                                  
+                                  <a href="#" class="btn my-btn text-light text-uppercase">Scopri di più</a>
+                                </div>
+                              </div>
+                        </div>
+                        
+                        
+                    </div>
                 </div>
-
-                <div>
-                    <label for="age">
-                        Età
-                    </label>
-                    <input
-                        type="number"
-                        id="age"
-                        name="age"
-                        placeholder="Inserisci la tua età..."
-                        min="0"
-                        max="150"
-                        required>
-                </div>
-
-                <div>
-                    <button id="submit-button" type="submit">
-                        Calcola
-                    </button>
-                </div>
-            </form>
+            </div>
+            
         </main>
 
         <!--Boostrap js link-->

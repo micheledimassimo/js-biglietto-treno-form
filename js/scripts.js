@@ -5,25 +5,6 @@ console.log('Prezzo per km in euro:', ppKM);
 
 
 
-/*
-
-
-
-
-//va applicato uno sconto del 20% per i minorenni
-
-
-
-//prezzo normale
-if (age >= 18 && age < 65) {
-    price = price.toFixed(2);
-    console.log('Prezzo: €', price);
-    document.getElementById('ticket-price').innerHTML = price;
-}
-
-
-//va applicato uno sconto del 40% per gli over 65.
-*/
 const infoForm = document.querySelector('form');
 infoForm.addEventListener(
     'submit',          // 1° argomento: evento da ascoltare/intercettare
