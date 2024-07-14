@@ -38,3 +38,6 @@ header > div > div > nav > ul > li:hover > a {
 .my-btn:hover {
     background-color: #A32135;
 }
+.my-txt-color {
+    color: #A32135;
+} 
